@@ -1,5 +1,8 @@
 .env
-node_modules/
-*.log
 .env.*
 !.env.example
+node_modules/
+*.log
+sauvegarde-bijouterie.sql
+k8s/01-mysql-secret.yaml
+k8s/05-backend-secret.yaml
