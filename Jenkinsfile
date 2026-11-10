@@ -16,13 +16,25 @@ pipeline {
                 }
             }
         }
+        stage('Tag') {
+            steps {
+                script {
+                    appFrontend.tag('latest')
+                    appBackend.tag('latest')
+                    appDb.tag('latest')
+                }
+            }
+        }
         stage('Push') {
             steps {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-credentials') {
                         appFrontend.push()
+                        appFrontend.push('latest')
                         appBackend.push()
+                        appBackend.push('latest')
                         appDb.push()
+                        appDb.push('latest')
                     }
                 }
             }
