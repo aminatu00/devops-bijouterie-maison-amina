@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: bijouterie-mysql:local
+          image: aminatug/bijouterie-mysql:2
           imagePullPolicy: IfNotPresent
 
    
