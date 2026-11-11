@@ -6,3 +6,4 @@ node_modules/
 sauvegarde-bijouterie.sql
 k8s/01-mysql-secret.yaml
 k8s/05-backend-secret.yaml
+sauvegarde-bijouterie-11-11-2026.sql
