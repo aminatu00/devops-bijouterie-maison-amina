@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: aminatug/bijouterie-mysql:2
+          image: aminatug/bijouterie-mysql:5
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3306

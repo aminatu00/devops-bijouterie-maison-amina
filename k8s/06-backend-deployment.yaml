@@ -33,7 +33,7 @@ spec:
 
       containers:
         - name: backend
-          image: aminatug/bijouterie-backend:2
+          image: aminatug/bijouterie-backend:5
           imagePullPolicy: IfNotPresent
 
           ports:

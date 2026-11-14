@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: aminatug/bijouterie-frontend:2
+          image: aminatug/bijouterie-frontend:5
           imagePullPolicy: IfNotPresent
 
           ports:
